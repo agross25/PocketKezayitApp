@@ -49,7 +49,9 @@ public class FinalViewActivity extends AppCompatActivity {
     private void displayInfo(String name, String quantity, String weight, int image) {
 
         titleTextView.setText(name);
-        String info = "Quantity: " + quantity;
+        String info = "";
+        if (!quantity.isEmpty())
+        { info+= "Quantity: " + quantity; }
         if (!weight.isEmpty())
         { info += "\nWeight: " + weight; }
         infoTextView.setText(info);
