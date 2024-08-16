@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Material3.CardView.Outlined"
+    android:layout_alignTop="@+id/author_txt"
+    android:layout_margin="@dimen/fab_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rv_menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+>
+<!--
+        android:clickable="true"
+        android:focusable="true"
+-->
+
+        <ImageView
+            android:id="@+id/menu_image"
+            android:layout_width="@dimen/menu_item_weight"
+            android:layout_height="@dimen/menu_item_height"
+            android:layout_margin="@dimen/tiny_margin"
+            android:contentDescription="@string/menu_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.6"
+            tools:srcCompat="@tools:sample/avatars[5]" />
+
+        <TextView
+            android:id="@+id/menu_item_hebrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/menu_image"
+            app:layout_constraintEnd_toEndOf="@+id/menu_image"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="@id/menu_image"
+            android:textSize="@dimen/title_font_size"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            tools:text="Menu Item Hebrew" />
+
+        <TextView
+            android:id="@+id/menu_item_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/menu_image"
+            app:layout_constraintEnd_toEndOf="@+id/menu_image"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@id/menu_image"
+            app:layout_constraintTop_toBottomOf="@id/menu_item_hebrew"
+            android:textSize="@dimen/subtitle_size"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            tools:text="Menu Item English" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,22 @@
+<resources>
+    <!-- Margins -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="standard_margin">12dp</dimen>
+    <dimen name="title_top_margin">40dp</dimen>
+    <dimen name="subtitle_top_margin">20dp</dimen>
+
+    <!-- Font Sizes -->
+    <dimen name="title_font_size">32sp</dimen>
+    <dimen name="subtitle_size">18sp</dimen>
+    <dimen name="standard_text_size">15sp</dimen>
+    <dimen name="menu_item_height">130dp</dimen>
+    <dimen name="menu_item_weight">150dp</dimen>
+    <dimen name="sub_item_height">115dp</dimen>
+    <dimen name="sub_item_weight">120dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="tiny_margin">5dp</dimen>
+    <dimen name="final_image_size">350dp</dimen>
+    <dimen name="large_margin">100dp</dimen>
+    <dimen name="medium_size">25sp</dimen>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:layout_marginTop="@dimen/title_top_margin"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/title_font_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Item Title" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="@dimen/final_image_size"
+        android:layout_height="@dimen/final_image_size"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:alpha="0.8"
+        android:contentDescription="@string/item_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title"
+        tools:srcCompat="@tools:sample/avatars[5]" />
+
+    <TextView
+        android:id="@+id/final_item_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_color"
+        android:text="@string/a_kezayit_is"
+        android:textSize="@dimen/title_font_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_image" />
+
+    <TextView
+        android:id="@+id/item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:gravity="center_horizontal"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/medium_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/final_item_subtitle"
+        tools:text="Item Info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

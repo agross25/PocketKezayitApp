@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Pocket Kezayit</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pocket_kezayit">Pocket Kezayit</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="based_on">Based on</string>
+    <string name="halachos_of_kzayis">Halachos of K\'Zayis</string>
+    <string name="by_rabbi_yisroel_pinchos_bodner">by Rabbi Yisroel Pinchos Bodner</string>
+    <string name="menu_photo">Menu Photo</string>
+    <string name="item_photo">Item Photo</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="display_header">Display</string>
+
+    <!-- Preferences -->
+    <string name="night_mode_key">Night Mode</string>
+    <string name="night_mode_title">Night/Dark Mode</string>
+    <string name="night_mode_off">Never use Night/Dark Mode</string>
+    <string name="night_mode_on">Use Night/Dark Mode (unless disabled in OS Settings)</string>
+    <string name="a_kezayit_is">A Kezayit is:</string>
+
+</resources>
